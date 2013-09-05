@@ -6,7 +6,7 @@
 * mysql-server 
 * libqt4-sql-mysql
 
-## Optional
+### Optional
 * PHP 5.2.0(or newer) phpMyAdmin
 
 ## 截图 Screenshot

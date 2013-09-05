@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_2</class>
+ <widget class="QDialog" name="Dialog_2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>862</width>
+    <height>532</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="managers_titlelabel">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>10</y>
+     <width>66</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;管理员&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="managers_datetime">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>10</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>系统时间</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="managers_tab">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>50</y>
+     <width>748</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>查询用户</string>
+    </attribute>
+    <widget class="QLabel" name="managers_tab_personnellabel">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>30</y>
+       <width>66</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>所属部门</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="manngers_tab_usernamelabel">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>30</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>用户名</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="managers_tab_searchpushButton">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>30</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>查找</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="managers_tab_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>30</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="managers_tab_comboBox">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>30</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>全部</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>人事部</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>财政部</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>广告部</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>宣传部</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="managers_tab_deletepushButton">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>370</y>
+       <width>98</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>删除用户</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="managers_tab_editpushButton">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>370</y>
+       <width>98</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>编辑详细信息</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="managers_tab_viewpushButton">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>370</y>
+       <width>98</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>查看详细信息</string>
+     </property>
+    </widget>
+    <widget class="QScrollArea" name="managers_tab_scrollArea">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>80</y>
+       <width>621</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>619</width>
+        <height>259</height>
+       </rect>
+      </property>
+      <widget class="QTableView" name="managers_tab_tableView">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>601</width>
+         <height>241</height>
+        </rect>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>添加用户</string>
+    </attribute>
+    <widget class="QPushButton" name="managers_tab_cancelpushButton">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>390</y>
+       <width>98</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>取消</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="managers_tab_okpushButton">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>390</y>
+       <width>98</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>确认修改</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="managers_tab_usergroupBox">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>561</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>用户信息</string>
+     </property>
+     <widget class="QLineEdit" name="managers_tab_idlineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>30</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="managers_tab_idlabel">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>30</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>工号</string>
+      </property>
+      <property name="buddy">
+       <cstring>managers_tab_idlineEdit</cstring>
+      </property>
+     </widget>
+     <widget class="QLabel" name="managers_tab_namelabel">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>30</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>姓名</string>
+      </property>
+      <property name="buddy">
+       <cstring>managers_tab_namelineEdit</cstring>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="managers_tab_namelineEdit">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>30</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="managers_tab_passwdlineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>80</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="managers_tab_passwdlabel_2">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>80</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>确认密码</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="managers_tab_passwdlineEdit">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>80</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="managers_tab_passwdlabel">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>66</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>初始密码</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="managers_tab_basicgroupBox">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>150</y>
+       <width>551</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>基本信息</string>
+     </property>
+     <widget class="QLineEdit" name="managers_tab_personnellineEdit">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>80</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="managers_tab_sexlabel">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>30</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>性别</string>
+      </property>
+      <property name="buddy">
+       <cstring>managers_tab_idcardlineEdit</cstring>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="managers_tab_birthlineEdit">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>130</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="managers_tab_addresslabel">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>180</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>籍贯</string>
+      </property>
+      <property name="buddy">
+       <cstring>managers_tab_addresslineEdit</cstring>
+      </property>
+     </widget>
+     <widget class="QLabel" name="managers_tab_agelabel">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>130</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>年龄</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="managers_tab_positionlineEdit">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>180</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="managers_tab_phonelineEdit">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>30</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="managers_tab_personnellabel_2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>80</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>所属部门</string>
+      </property>
+      <property name="buddy">
+       <cstring>managers_tab_personnellineEdit</cstring>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="managers_tab_addresslineEdit">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>180</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="managers_tab_sexlineEdit">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>30</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="managers_tab_positionlabel">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>180</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>职称</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="managers_tab_idcardlineEdit">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>80</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="managers_tab_idcardlabel">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>80</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>身份证号</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="managers_tab_agelineEdit">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>130</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="managers_tab_birthlabel">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>130</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>出生年月</string>
+      </property>
+      <property name="buddy">
+       <cstring>managers_tab_birthlineEdit</cstring>
+      </property>
+     </widget>
+     <widget class="QLabel" name="managers_tab_phonelabel">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>联系方式</string>
+      </property>
+      <property name="buddy">
+       <cstring>managers_tab_phonelineEdit</cstring>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>修改密码</string>
+    </attribute>
+    <widget class="QLineEdit" name="managers_tab_oldpasswdlineEdit">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>80</y>
+       <width>113</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="managers_tab_okpushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>340</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>确认修改</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="managers_tab_newpasswdlabel">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>160</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>输入新密码</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="managers_tab_newpasswdlabel_2">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>240</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>确认新密码</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="managers_tab_newpasswdlineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>240</y>
+       <width>113</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="managers_tab_cancelpushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>340</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>取消</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="managers_tab_newpasswdlineEdit">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>160</y>
+       <width>113</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="managers_tab_oldpasswdlabel">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>80</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>原密码</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="managers_signoutpushButton">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>10</y>
+     <width>61</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>managers_tab_comboBox</tabstop>
+  <tabstop>managers_tab_lineEdit</tabstop>
+  <tabstop>managers_tab_searchpushButton</tabstop>
+  <tabstop>managers_tab_scrollArea</tabstop>
+  <tabstop>managers_tab_tableView</tabstop>
+  <tabstop>managers_tab_deletepushButton</tabstop>
+  <tabstop>managers_tab_editpushButton</tabstop>
+  <tabstop>managers_tab_viewpushButton</tabstop>
+  <tabstop>managers_tab</tabstop>
+  <tabstop>managers_tab_idlineEdit</tabstop>
+  <tabstop>managers_tab_namelineEdit</tabstop>
+  <tabstop>managers_tab_passwdlineEdit</tabstop>
+  <tabstop>managers_tab_passwdlineEdit_2</tabstop>
+  <tabstop>managers_tab_phonelineEdit</tabstop>
+  <tabstop>managers_tab_sexlineEdit</tabstop>
+  <tabstop>managers_tab_personnellineEdit</tabstop>
+  <tabstop>managers_tab_idcardlineEdit</tabstop>
+  <tabstop>managers_tab_birthlineEdit</tabstop>
+  <tabstop>managers_tab_agelineEdit</tabstop>
+  <tabstop>managers_tab_addresslineEdit</tabstop>
+  <tabstop>managers_tab_positionlineEdit</tabstop>
+  <tabstop>managers_tab_cancelpushButton</tabstop>
+  <tabstop>managers_tab_okpushButton</tabstop>
+  <tabstop>managers_signoutpushButton</tabstop>
+  <tabstop>managers_tab_oldpasswdlineEdit</tabstop>
+  <tabstop>managers_tab_newpasswdlineEdit</tabstop>
+  <tabstop>managers_tab_newpasswdlineEdit_2</tabstop>
+  <tabstop>managers_tab_cancelpushButton_2</tabstop>
+  <tabstop>managers_tab_okpushButton_2</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
